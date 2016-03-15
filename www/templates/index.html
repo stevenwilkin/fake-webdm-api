@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WebDM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/public/images/favicon.ico">
+	{{range .Stylesheets}}
+	<link rel="stylesheet" href="{{.}}">
+	{{end}}
+  </head>
+  <body>
+    <div class="b-layout">
+      <div class="b-layout__banner"></div>
+      <div class="b-layout__main"></div>
+      <div class="b-layout__footer"></div>
+    </div>
+    <script>
+      var WEBDM = WEBDM || {};
+      WEBDM.NAME = 'Ubuntu'
+      WEBDM.SUBNAME = '';
+    </script>
+    <script src="/public/js/webdm.js"></script>
+  </body>
+</html>
