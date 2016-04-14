@@ -48,6 +48,7 @@ func main() {
 
 	http.HandleFunc("/api/v2/packages/", JSONHandler)
 	http.HandleFunc("/icons/", IconHandler)
+	http.HandleFunc("/js/webdm.js", JsHandler)
 	http.Handle("/public/", http.FileServer(http.Dir("www")))
 	http.HandleFunc("/", mainPageHandler)
 
