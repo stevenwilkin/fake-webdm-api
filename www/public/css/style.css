@@ -583,10 +583,6 @@ li.row {
 }
 
 .snap-details__icon {
-	background-image: url("../img/docker_big.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: 0 27px;
 	border-radius: 10px;
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
 	width: 125px;

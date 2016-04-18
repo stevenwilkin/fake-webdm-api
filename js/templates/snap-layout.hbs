@@ -1,20 +1,21 @@
-<div class="b-layout__container">
-  <div class="b-snap__banner">
-    <div class="b-icon">
-      <img src="{{ icon }}" width="70" height="70">
-    </div>
-    <div class="b-snap__meta">
-      <h1 class="b-snap__title">{{ name }} {{ version }} {{ binary_filesize }}</h1>
-      <p>
-      <span>{{ binary_filesize}}</span>
-      </p>
-    </div>
-    <div class="b-snap__actions">
-      {{> installer}}
-    </div>
-  </div>
+<div class="snap-details">
+	<div class="snap-details__left">
+		<img class="snap-details__icon" src="{{ icon }}" />
+	</div>
+	<div class="snap-details__centre">
+		<h1 class="snap-details__name">{{ name }}</h1>
+		<div class="snap-details__developer">
+			<a href="#">{{ origin }}</a>
+		</div>
+	</div>
+	<div class="snap-details__right">
+		<button class="snap-details--remove button--destructive right">Remove this snap</button>
+	</div>
 </div>
-<div class="region-menu"></div>
-<div class="b-layout__container">
-  <div class="region-tab"></div>
+
+{{#if description}}
+<div class="snap-description clearboth">
+	<h3 class="snap-description--about">About</h3>
+	<p class="snap-description--content">{{ description }}</p>
 </div>
+{{/if}}
