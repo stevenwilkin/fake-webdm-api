@@ -454,62 +454,7 @@ li.row {
 
 .snap__logo {
 	height: 250px;
-	background-repeat: no-repeat;
 	border-radius: 10px 10px 0 0;
-}
-
-.snap--webdm .snap__logo {
-	background-image: url("../img/ubuntu-logo32.png");
-	background-position: 25px 25px;
-}
-
-.snap--add-first .snap__logo {
-	background-image: url("../img/add_first_snap.png");
-	background-position: 25px 25px;
-	background-color: #f7f7f7;
-}
-
-.snap--copter .snap__logo {
-	background-image: url("../img/copter.png");
-	background-position: 55px 55px;
-}
-
-.snap--influxdb .snap__logo {
-	background-image: url("../img/influxdb.png");
-	background-position: 55px 55px;
-	background-color: rgba(4, 42, 64, 1);
-}
-
-.snap--chatroom .snap__logo {
-	background-image: url("../img/chatroom.png");
-	background-position: 55px 55px;
-}
-
-.snap--dslam .snap__logo {
-	background-image: url("../img/dslam.png");
-	background-position: 45px 65px;
-	background-color: rgba(255, 115, 0, 1);
-}
-
-.snap--owncloud .snap__logo {
-	background-image: url("../img/owncloud.png");
-	background-position: 35px 55px;
-	background-color: rgba(29, 45, 68, 1);
-}
-
-.snap--docker .snap__logo {
-	background-image: url("../img/docker.png");
-	background-position: 27px 80px;
-}
-
-.snap--transmission .snap__logo {
-	background-image: url("../img/transmission.png");
-	background-position: 45px 45px;
-}
-
-.snap--capes .snap__logo {
-	background-image: url("../img/capes.png");
-	background-position: 50px 50px;
 }
 
 .snap__name {
@@ -810,8 +755,13 @@ hr {
 	height: 80px;
 }
 
-button {
+.button {
 	width: auto !important;
+	text-decoration: none;
+}
+
+.button:hover {
+	text-decoration: none;
 }
 
 .router {
@@ -824,6 +774,8 @@ button {
 }
 
 .wrapper {
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 }
 
