@@ -1,0 +1,997 @@
+/**
+ * Layout
+ */
+
+@media screen and (min-width: 641px) {
+	.l-left-col {
+		width: 320px;
+		float: left;
+	}
+
+	.l-left-col.banner {
+		min-width: initial;
+	}
+
+	.l-right-col {
+		margin-left: 320px;
+		overflow: hidden;
+	}
+
+	.nav__item__link {
+		width: auto !important;
+		border: 0 !important;
+	}
+
+	.nav__item__link span {
+		display: initial !important;
+	}
+
+	.nav__item__link svg {
+		display: none;
+	}
+
+	.installed-snaps .button--positive {
+		margin-right: 20px !important;
+	}
+
+	.settings__content input,
+	.settings__content button,
+	.settings__content select,
+	.settings__content p {
+		margin-left: 25px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.banner .logo {
+		margin: 0 0 0 10px !important;
+	}
+
+	.banner .nav-primary ul li {
+		border-bottom: 0;
+		border-right: 0;
+		border-left: 1px solid #e3e3e3;
+	}
+
+	.banner .nav-primary ul li:last-child {
+		border-right: 1px solid #e3e3e3;
+	}
+
+	.l-left-col,
+	.l-right-col  {
+		margin-left: 10px !important;
+		margin-right: 10px !important;
+	}
+
+	.home__title {
+		margin-left: 10px !important;
+	}
+
+	.home__details,
+	.home__image {
+		clear: left;
+		width: 100% !important;
+	}
+
+	.home__details {
+		margin: 0 !important;
+	}
+
+	.home__details .list {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.home__details .list .row {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		margin: 0;
+	}
+
+	.installed-snaps h2 {
+		margin-left: 10px !important;
+	}
+
+	.power__warning {
+		margin-left: 0 !important;
+		margin-right: 0;
+	}
+
+	.power__buttons {
+		margin-right: 0 !important;
+	}
+
+	.profile__image {
+		width: 200px !important;
+		height: 200px !important;
+	}
+
+	.profile__details {
+		margin-left: 0 !important;
+		margin-top: 20px !important;
+		clear: left;
+	}
+
+	.snaps,
+	.snap-details {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+
+	.snap-details__centre {
+		clear: left;
+		margin: 15px 0 !important;
+	}
+
+	.snap_details__name,
+	.snap-details__developer,
+	.snap-rating {
+		margin-left: 0 !important;
+	}
+
+	.snap-details__right {
+		clear: left;
+		margin-right: 20px !important;
+	}
+
+	.installed-snaps .button--positive {
+		margin-right: 10px !important;
+	}
+
+	.list--snap-about {
+		margin-left: 10px !important;
+		margin-right: 10px !important;
+	}
+
+	.snap-description,
+	.snap-reviews,
+	.profile {
+		margin-left: 10px !important;
+		margin-right: 10px !important;
+	}
+
+	.settings__content input,
+	.settings__content button,
+	.settings__content select,
+	.settings__content h2,
+	.settings__content h3,
+	.settings__content h4,
+	.settings__content p {
+		margin-left: 0;
+	}
+
+	.header-search {
+		display: initial;
+		max-width: initial;
+	}
+
+	.header-search input {
+		padding: 8px 10px !important;
+	}
+
+	footer {
+		padding-right: 10px !important;
+		background: none !important;
+	}
+}
+
+.l-left-col:first-child,
+.l-right-col {
+	padding-top: 30px;
+}
+
+.l-left-col {
+	margin-left: 20px;
+}
+
+/**
+ * Header
+ */
+
+.banner {
+	background-color: #fff;
+	border: 0;
+}
+
+.banner .logo {
+	margin: 0 0 0 20px;
+}
+
+
+/**
+ * Primary nav
+ */
+
+.nav {
+	float: left;
+	margin: 0 0 0 15px;
+}
+
+.nav__item {
+	height: 48px;
+}
+
+.nav__item__link {
+	padding: 14px 12px 8px 12px !important;
+	width: 28px;
+	height: 27px;
+}
+
+.nav__item.active,
+.nav__item:hover {
+	background-color: #f7f7f7 !important;
+}
+
+.nav__item__link svg {
+	width: 25px;
+	height: 25px;
+}
+
+.banner .nav-primary {
+	max-width: initial !important;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.banner .nav-primary ul {
+	display: block;
+	border-top: 0;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.banner .nav-primary ul li {
+	width: auto;
+}
+
+.banner .nav-primary ul li a {
+	background-color: transparent !important;
+}
+
+/**
+ * Secondary nav
+ */
+
+.nav-secondary {
+	border-left: 0;
+	border-right: 0;
+	background-color: #f7f7f7;
+	margin-bottom: 30px;
+	padding: 3px 0 3px 10px;
+}
+
+.nav-secondary--store {
+	margin-bottom: 0;
+}
+
+.nav-secondary .breadcrumb {
+	padding: 0;
+}
+
+.nav-secondary .breadcrumb li .breadcrumb-link {
+	font-size: 1.25em;
+	color: #333;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.nav-secondary .breadcrumb li .breadcrumb-link.back {
+	background-image: url("../../assets/icons/go-previous.svg");
+	background-size: 20px 20px;
+	background-position: 0 12px;
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	margin-left: 22px;
+}
+
+.nav-secondary .breadcrumb li .breadcrumb-link:after {
+	content: "";
+}
+
+.search {
+	background-image: url("../../assets/icons/search.svg");
+	background-size: contain;
+	margin: 6px 22px 0;
+	width: 30px;
+	height: 30px;
+}
+
+
+/**
+ * Home page
+ */
+
+.home__title {
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.home__details {
+	width: 49%;
+	float: left;
+	margin-left: 20px;
+}
+
+.home__image {
+	width: 49%;
+	float: left;
+}
+
+/**
+ * List
+ */
+
+.list--snap-about {
+	margin: 0px 20px 20px 20px;
+}
+
+li.row {
+	padding: 10px 0;
+}
+
+.row.active {
+	background-color: #f7f7f7;
+}
+
+.right {
+	color: #B3B3B3;
+}
+
+.settings__section {
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	cursor: pointer;
+}
+
+.settings__section--device-info {
+	background-image: url("../../assets/icons/info.svg");
+}
+
+.settings__section--users {
+	background-image: url("../../assets/icons/account.svg");
+}
+
+.settings__section--updates {
+	background-image: url("../../assets/icons/sync.svg");
+}
+
+.settings__section--date-time {
+	background-image: url("../../assets/icons/calendar.svg");
+}
+
+.forward {
+	background-image: url("../../assets/icons/go-next.svg");
+	background-position: right 0 top 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-right: 40px;
+}
+
+.refresh {
+	background-image: url("../../assets/icons/sync.svg");
+	background-position: right 0 top 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-right: 40px;
+}
+
+.settings .list__row {
+	margin-bottom: 20px;
+	padding: 10px 25px 30px 25px;
+}
+
+.add-user {
+	font-size: 20px;
+	margin-top: -15px;
+	margin-bottom: 60px;
+}
+
+.power__buttons {
+	float: right;
+	margin-right: 25px;
+}
+
+.power__button--power {
+	margin-left: 20px !important;
+}
+
+/**
+ * Snaps
+ */
+
+.installed-snaps {
+	float: left;
+	clear: both;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.installed-snaps h2 {
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+.snaps {
+	border-top: 1px solid #d2d2d2;
+	background-color: #f7f7f7;
+	padding: 0 20px 20px 20px;
+	margin-top: 20px;
+	clear: both;
+}
+
+.snaps--store {
+	border: 0;
+	margin-top: 0;
+	padding-top: 40px;
+}
+
+.snaps--store__title {
+	float: left;
+	margin-left: 0;
+}
+
+.header-search {
+	padding: 0;
+	margin-right: 0;
+}
+
+.snap {
+	float: left;
+	width: 250px;
+	height: 365px;
+	margin-top: 20px;
+	margin-right: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+	position: relative;
+	cursor: pointer;
+}
+
+.snaps--store .snap {
+	height: 390px;
+}
+
+.snap__logo {
+	height: 250px;
+	background-repeat: no-repeat;
+	border-radius: 10px 10px 0 0;
+}
+
+.snap--webdm .snap__logo {
+	background-image: url("../img/ubuntu-logo32.png");
+	background-position: 25px 25px;
+}
+
+.snap--add-first .snap__logo {
+	background-image: url("../img/add_first_snap.png");
+	background-position: 25px 25px;
+	background-color: #f7f7f7;
+}
+
+.snap--copter .snap__logo {
+	background-image: url("../img/copter.png");
+	background-position: 55px 55px;
+}
+
+.snap--influxdb .snap__logo {
+	background-image: url("../img/influxdb.png");
+	background-position: 55px 55px;
+	background-color: rgba(4, 42, 64, 1);
+}
+
+.snap--chatroom .snap__logo {
+	background-image: url("../img/chatroom.png");
+	background-position: 55px 55px;
+}
+
+.snap--dslam .snap__logo {
+	background-image: url("../img/dslam.png");
+	background-position: 45px 65px;
+	background-color: rgba(255, 115, 0, 1);
+}
+
+.snap--owncloud .snap__logo {
+	background-image: url("../img/owncloud.png");
+	background-position: 35px 55px;
+	background-color: rgba(29, 45, 68, 1);
+}
+
+.snap--docker .snap__logo {
+	background-image: url("../img/docker.png");
+	background-position: 27px 80px;
+}
+
+.snap--transmission .snap__logo {
+	background-image: url("../img/transmission.png");
+	background-position: 45px 45px;
+}
+
+.snap--capes .snap__logo {
+	background-image: url("../img/capes.png");
+	background-position: 50px 50px;
+}
+
+.snap__name {
+	color: #5d5d5d;	
+	margin: 10px 0 5px 12px;
+}
+
+.snap__developer {
+	color: #5d5d5d;	
+	font-weight: 100;
+	margin: 0 0 0 12px;
+}
+
+.snap__status {
+	margin: 7px 0 0 12px;
+	font-size: 1.2em;
+	background-repeat: no-repeat;
+	background-position: 155px 0;
+	padding-top: 7px;
+	height: 40px;
+	color: #3EB34F;
+	background-image: url("../img/toggle_active.png");
+	cursor: pointer;
+}
+
+.snap--inactive .snap__status,
+.snap-details--inactive .snap__status {
+	color: #5d5d5d;
+	background-image: url("../img/toggle_inactive.png");
+}
+
+.snap-details.snap-details--inactive .snap__status {
+	background-position: right 2px top 0;
+}
+
+.snap__install {
+	text-align: right;
+	margin: 15px 10px 0;
+	padding: 15px 10px 0 0;
+	border-top: 1px solid #d2d2d2;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.snap__price {
+	font-style: normal;
+	float: left;
+	color: #5d5d5d;
+	margin-left: 2px;
+}
+
+.snap--inactive:after {
+	content: " ";
+	z-index: 10;
+	display: block;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.snaps__add {
+	margin-top: 25px;
+	margin-bottom: 100px;
+}
+
+
+/**
+ * Individual snap
+ */
+
+.snap-details {
+	margin: 25px 20px;
+	float: left;
+	width: 100%;
+}
+
+.snap-details__left {
+	float: left;
+}
+
+.snap-details__centre {
+	float: left;
+}
+
+.snap-details__right {
+	float: right;
+	margin-right: 40px;
+}
+
+.snap-details__name {
+	margin-bottom: 0.25em;
+}
+
+.snap-details__developer {
+	margin-left: 25px;
+}
+
+.snap-rating {
+	margin: 15px 0 30px 24px;
+	float: left;
+}
+
+.snap-details .snap-rating {
+	margin-bottom: 10px;
+}
+
+.snap-rating__star {
+	background-image: url("../../assets/icons/starred.svg");
+	background-size: contain;
+	width: 25px;
+	height: 25px;
+	display: block;
+	float: left;
+	margin-right: 12.5px;
+}
+
+.snap-reviews__add .snap-rating__star {
+	cursor: pointer;
+}
+
+.snap-rating__star--empty {
+	background-image: url("../../assets/icons/non-starred.svg");
+}
+
+.snap-details__icon {
+	background-image: url("../img/docker_big.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0 27px;
+	border-radius: 10px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+	width: 125px;
+	height: 125px;
+}
+
+.snap-details--price {
+	float: right;
+	margin: 0 0 15px 0;
+}
+
+.snap-details--install {
+	margin-right: 0 !important;
+	clear: right;
+}
+
+.snap-details--remove {
+	margin-right: 0 !important;
+	clear: right;
+}
+
+.snap-details .snap__status {
+	float: right;
+	width: 100%;
+	background-position: right 0 top 0;
+	margin: 0 0 5px 0;
+}
+
+.snap-description {
+	margin: 40px 20px 0 20px;
+}
+
+.snap-description--heading {
+	text-transform: uppercase;
+	font-size: 1em;
+	margin-bottom: 30px;
+}
+
+.snap-description--about {
+	text-transform: none;
+	font-size: 20px;
+	color: #333;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.snap-description--content {
+	margin-left: 0;
+	margin-right: 0;
+	font-size: 16px;
+}
+
+.list--snap-details {
+	border-top: 1px dotted #d2d2d2;;
+	overflow: hidden;
+}
+
+.snap-reviews {
+	margin: 50px 20px 0 20px;
+}
+
+.snap-reviews__heading {
+	border-bottom: 1px dotted #d2d2d2;;
+	margin: 0 0 25px 0;
+	padding: 0 0 20px 0;
+}
+
+.snap-reviews__add {
+	border-bottom: 1px dotted #d2d2d2;;
+	margin: 0 0 30px 0;
+}
+
+.snap-reviews__add__heading {
+	padding-bottom: 3px;
+	margin-top: 50px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.snap-reviews__add__input {
+	border-radius: 5px;
+	color: #d2d2d2;
+	width: 500px;
+	height: 200px;
+	margin-left: 0;
+	margin-top: 10px;
+	font-size: 20px;
+	resize: none;
+	clear: left;
+}
+
+.snap-reviews__add__submit {
+	margin-top: 25px;
+	margin-left: 355px;
+	margin-bottom: 15px;
+}
+
+.snap-reviews .snap-rating {
+	margin: 0 0 20px 0;
+}
+
+.snap-reviews .snap-reviews__add .snap-rating {
+	float: left;
+}
+
+.snap-reviews__content {
+	margin: 0 0 10px 0;
+	clear: left;
+}
+
+.snap-reviews__author {
+	display: block;
+	margin-bottom: 20px;
+}
+
+
+/**
+ * Profile
+ */
+
+.profile {
+	margin: 30px 15px;
+}
+
+.profile__image {
+	float: left;
+	width: 100px;
+	height: 100px;
+	border-radius: 6px;
+}
+
+.profile__details {
+	float: left;
+	margin-left: 25px;
+}
+
+.profile__details__name {
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+
+.profile__details__email {
+	margin-bottom: 20px;
+}
+
+
+/**
+ * Misc
+ */
+
+h1,
+h2,
+h3 {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+h4 {
+	margin-left: 25px;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+hr {
+	border: 0;
+	height: 80px;
+}
+
+button {
+	width: auto !important;
+}
+
+.router {
+	margin: 60px 0;
+	padding: 0 10px;
+}
+
+.clearboth {
+	clear: both;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+.spacer {
+	height: 40px;
+	clear: both;
+}
+
+
+/**
+ * Footer
+ */
+
+footer {
+	box-shadow: none;
+	padding: 30px 127px 20px 10px;
+	background-image: url("../img/ubuntu-logo.svg");
+	background-size: 107px 25px;
+	background-position: right 20px top 40px;
+	background-repeat: no-repeat;
+}
+
+footer p {
+	margin: 5px 0 0 5px;
+	font-size: 16px;
+}
+
+footer p:nth-child(2) {
+	font-size: 13px;
+}
+
+
+/**
+ * Buttons
+ */
+
+.button--base,
+.button--destructive,
+.button--inline-base,
+.button--inline-destructive,
+.button--inline-neutral,
+.button--inline-positive,
+.button--neutral,
+.button--positive {
+  font-smoothing: subpixel-antialiased;
+  font-size: 1em;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 11px 24px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+  outline: none;
+  font-weight: 300;
+  cursor: pointer;
+  line-height: 1em;
+}
+.button--neutral,
+.button--inline-neutral {
+  color: #333;
+  background-color: transparent;
+  border: 1px solid #cdcdcd;
+}
+.button--inline-neutral:active,
+.button--inline-neutral:focus,
+.button--inline-neutral:hover,
+.button--neutral:active,
+.button--neutral:focus,
+.button--neutral:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.button--disabled:active,
+.button--disabled:focus,
+.button--disabled:hover,
+.button--inline-neutral:disabled:active,
+.button--inline-neutral:disabled:focus,
+.button--inline-neutral:disabled:hover,
+.button--neutral:disabled:active,
+.button--neutral:disabled:focus,
+.button--neutral:disabled:hover {
+  background-color: transparent;
+}
+.button--inline-neutral {
+  display: inline-block;
+  width: auto;
+}
+.button--positive,
+.button--inline-positive {
+  color: #fff;
+  background-color: #38b44a;
+}
+.button--inline-positive:active,
+.button--inline-positive:focus,
+.button--inline-positive:hover,
+.button--positive:active,
+.button--positive:focus,
+.button--positive:hover {
+  background-color: #2c8d3a;
+}
+.button--disabled:active,
+.button--disabled:focus,
+.button--disabled:hover,
+.button--inline-positive:disabled:active,
+.button--inline-positive:disabled:focus,
+.button--inline-positive:disabled:hover,
+.button--positive:disabled:active,
+.button--positive:disabled:focus,
+.button--positive:disabled:hover {
+  background-color: #38b44a;
+}
+.button--inline-positive {
+  display: inline-block;
+  width: auto;
+}
+.button--destructive,
+.button--inline-destructive {
+  color: #fff;
+  background-color: #df382c;
+}
+.button--destructive:active,
+.button--destructive:focus,
+.button--destructive:hover,
+.button--inline-destructive:active,
+.button--inline-destructive:focus,
+.button--inline-destructive:hover {
+  background-color: #bc271c;
+}
+.button--destructive:disabled:active,
+.button--destructive:disabled:focus,
+.button--destructive:disabled:hover,
+.button--disabled:active,
+.button--disabled:focus,
+.button--disabled:hover,
+.button--inline-destructive:disabled:active,
+.button--inline-destructive:disabled:focus,
+.button--inline-destructive:disabled:hover {
+  background-color: #df382c;
+}
+.button--inline-destructive {
+  display: inline-block;
+  width: auto;
+}
+.button--base,
+.button--inline-base {
+  color: #333;
+  background-color: transparent;
+}
+.button--base:active,
+.button--base:focus,
+.button--base:hover,
+.button--inline-base:active,
+.button--inline-base:focus,
+.button--inline-base:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.button--base:disabled:active,
+.button--base:disabled:focus,
+.button--base:disabled:hover,
+.button--disabled:active,
+.button--disabled:focus,
+.button--disabled:hover,
+.button--inline-base:disabled:active,
+.button--inline-base:disabled:focus,
+.button--inline-base:disabled:hover {
+  background-color: transparent;
+}
+.button--inline-base {
+  display: inline-block;
+  width: auto;
+}
