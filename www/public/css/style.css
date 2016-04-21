@@ -594,12 +594,7 @@ li.row {
 	margin: 0 0 15px 0;
 }
 
-.snap-details--install {
-	margin-right: 0 !important;
-	clear: right;
-}
-
-.snap-details--remove {
+.snap-details__action {
 	margin-right: 0 !important;
 	clear: right;
 }

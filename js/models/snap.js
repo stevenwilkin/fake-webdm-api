@@ -98,19 +98,19 @@ module.exports = Backbone.Model.extend({
     var installHTMLClass = '';
 
     if (state === CONF.INSTALL_STATE.REMOVED) {
-      installHTMLClass = 'b-installer_do_install';
+      installHTMLClass = 'button--positive';
     }
 
     if (state === CONF.INSTALL_STATE.INSTALLED) {
-      installHTMLClass = 'b-installer_do_remove';
+      installHTMLClass = 'button--destructive';
     }
 
     if (state === CONF.INSTALL_STATE.INSTALLING) {
-      installHTMLClass = 'b-installer_do_install b-installer_thinking';
+      installHTMLClass = 'button--positive b-installer_thinking';
     }
 
     if (state === CONF.INSTALL_STATE.REMOVING) {
-      installHTMLClass = 'b-installer_do_remove b-installer_thinking';
+      installHTMLClass = 'button--destructive b-installer_thinking';
     }
 
     return model.set('installHTMLClass', installHTMLClass);
@@ -123,13 +123,13 @@ module.exports = Backbone.Model.extend({
 
     switch (state) {
       case CONF.INSTALL_STATE.INSTALLED:
-        action = 'Remove';
+        action = 'Remove this snap';
         break;
       case CONF.INSTALL_STATE.INSTALLING:
         action = 'Installing…';
         break;
       case CONF.INSTALL_STATE.REMOVED:
-        action = 'Install';
+        action = 'Install this snap';
         break;
       case CONF.INSTALL_STATE.REMOVING:
         action = 'Removing…';

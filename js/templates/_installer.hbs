@@ -1,19 +1,6 @@
 {{#if isInstallable}}
-<div class="b-installer b-installer_small {{ installHTMLClass }}">
-{{#if installActionString}}
-<div class="b-installer__button">{{ installActionString }}</div>
-</div>
-{{/if}}
-<div class="b-installer__message"></div>
-</div>
-{{else}}
-<div class="b-installer b-installer_small b-installer_disabled {{ installHTMLClass }}">
-<div class="b-installer__button">
-{{#if isInstalled}}
-Installed
-{{else}}
-Not installable
-{{/if}}
-</div>
-</div>
+	{{#if installActionString}}
+		<button class="b-installer b-installer__button snap-details__action right {{ installHTMLClass }}">{{ installActionString }}</button>
+	{{/if}}
+	<div class="b-installer__message"></div>
 {{/if}}
