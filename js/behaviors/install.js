@@ -15,7 +15,6 @@ module.exports = Marionette.Behavior.extend({
   },
 
   ui: {
-    errorMessage: '.b-installer__error',
     statusMessage: '.b-installer__message',
     installer: '.b-installer',
     installerButton: '.b-installer__button'
