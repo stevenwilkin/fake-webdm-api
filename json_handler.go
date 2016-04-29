@@ -11,7 +11,9 @@ import (
 func JSONHandler(w http.ResponseWriter, r *http.Request) {
 	filename := "all.json"
 	if strings.HasSuffix(r.URL.Path, "packages/") {
-		if r.FormValue("installed_only") == "true" {
+		if r.FormValue("q") != "" {
+			filename = "search.json"
+		} else if r.FormValue("installed_only") == "true" {
 			filename = "installed.json"
 		}
 	} else {
