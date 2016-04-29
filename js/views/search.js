@@ -1,15 +1,16 @@
 // search layout view
 var Backbone = require('backbone');
 var Marionette = require('backbone.marionette');
-var BaskView = require('./snaplist.js');
-var template = require('../templates/search.hbs');
+var BaskView = require('./storelist.js');
+var template = require('../templates/store.hbs');
 
 module.exports = Backbone.Marionette.LayoutView.extend({
 
-  className: 'search',
+  className: 'b-search',
 
-  template : function() {
-    return template();
+  template : function(model) {
+    model.title = 'Search results';
+    return template(model);
   },
 
   onBeforeShow: function() {
@@ -19,6 +20,6 @@ module.exports = Backbone.Marionette.LayoutView.extend({
   },
 
   regions: {
-    resultsRegion: '.region-results'
+    resultsRegion: '.region-snaplist'
   }
 });

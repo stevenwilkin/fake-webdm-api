@@ -34,7 +34,7 @@ module.exports = Marionette.ItemView.extend({
       'name': webdm.NAME,
       'subname': webdm.SUBNAME,
       'isHomeActive': (path === ''),
-      'isStoreActive': (path === 'store'),
+      'isStoreActive': (path === 'store' || path === 'search'),
       //'isSearchActive': (path === 'search'),
       'isSystemActive': (path === 'system-settings')
     };

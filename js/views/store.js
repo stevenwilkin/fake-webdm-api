@@ -8,8 +8,9 @@ module.exports = Backbone.Marionette.LayoutView.extend({
 
   className: 'b-layout__container',
 
-  template : function() {
-    return template();
+  template : function(model) {
+    model.title = 'Available snaps';
+    return template(model);
   },
 
   onBeforeShow: function() {
